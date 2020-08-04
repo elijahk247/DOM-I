@@ -68,7 +68,7 @@ const ctaMain = document.querySelector('.cta');
 console.log(ctaMain);
 
 const ctaTitle = ctaMain.querySelector('h1');
-ctaTitle.textContent = siteContent.cta.h1;
+ctaTitle.innerText = 'Dom \n is \n Awesome';
 
 const ctaButton = ctaMain.querySelector('button')
 ctaButton.textContent = siteContent.cta.button;
