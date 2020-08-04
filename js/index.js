@@ -40,3 +40,117 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+console.log('Hello');
+
+// Changing the Anchor tags in nav to reflect the original
+const firstAnchor = document.querySelector('a');
+firstAnchor.textContent = siteContent.nav['nav-item-1'];
+
+const secondAnchor = firstAnchor.nextElementSibling;
+secondAnchor.textContent = siteContent.nav['nav-item-2'];
+
+const thirdAnchor = secondAnchor.nextElementSibling;
+thirdAnchor.textContent = siteContent.nav['nav-item-3'];
+
+const fourthAnchor = thirdAnchor.nextElementSibling;
+fourthAnchor.textContent = siteContent.nav['nav-item-4'];
+
+const fifthAnchor = fourthAnchor.nextElementSibling;
+fifthAnchor.textContent = siteContent.nav['nav-item-5'];
+
+const sixthAnchor = fifthAnchor.nextElementSibling;
+sixthAnchor.textContent = siteContent.nav['nav-item-6'];
+
+
+// Editing cta stuff 
+const ctaMain = document.querySelector('.cta');
+console.log(ctaMain);
+
+const ctaTitle = ctaMain.querySelector('h1');
+ctaTitle.textContent = siteContent.cta.h1;
+
+const ctaButton = ctaMain.querySelector('button')
+ctaButton.textContent = siteContent.cta.button;
+
+const ctaImage = ctaMain.querySelector('img');
+ctaImage.src = siteContent.cta['img-src'];
+
+
+// main content stuff
+const mainContent = document.querySelector('.main-content');
+console.log(mainContent);
+
+const mainImage = mainContent.querySelector('img');
+mainImage.src = siteContent['main-content']['middle-img-src'];
+
+const topContent = mainContent.querySelector('.text-content');
+//console.log(topContent);
+
+// top content edit
+const topHeader = topContent.querySelector('h4');
+console.log(topHeader);
+topHeader.textContent = siteContent['main-content']['features-h4'];
+const topParagraph = topContent.querySelector('p');
+topParagraph.textContent = siteContent['main-content']['features-content'];
+
+
+// second part of main-content 
+const secondTopContent = topContent.nextElementSibling;
+
+const secondTopHeader = secondTopContent.querySelector('h4');
+secondTopHeader.textContent = siteContent["main-content"]['about-h4'];
+const secondTopParagraph = secondTopContent.querySelector('p');
+secondTopParagraph.textContent = siteContent["main-content"]['about-content'];
+
+
+// bottom-content edit 
+const bottomContent = mainContent.querySelector('.bottom-content');
+console.log(bottomContent);
+
+// first portion of bottom-content
+const firstBottom = bottomContent.querySelector('.text-content');
+console.log(firstBottom);
+
+const firstBotHeader = firstBottom.querySelector('h4');
+firstBotHeader.textContent = siteContent["main-content"]["services-h4"];
+const firstBotPar = firstBottom.querySelector('p');
+firstBotPar.textContent = siteContent["main-content"]["services-content"];
+
+// second portion of bottom-content
+const secondBottom = firstBottom.nextElementSibling;
+console.log(secondBottom);
+
+const secondBotHeader = secondBottom.querySelector('h4');
+secondBotHeader.textContent = siteContent["main-content"]["product-h4"];
+const secondBotPar = secondBottom.querySelector('p');
+secondBotPar.textContent = siteContent["main-content"]["product-content"];
+
+// third portioin of bottom-content
+
+const thirdBottom = secondBottom.nextElementSibling;
+console.log(thirdBottom);
+
+const thirdBotHeader = thirdBottom.querySelector('h4');
+thirdBotHeader.textContent = siteContent["main-content"]["vision-h4"];
+const thirdBotPar = thirdBottom.querySelector('p');
+thirdBotPar.textContent = siteContent["main-content"]["vision-content"];
+
+
+// contact edit 
+const contactInfo = document.querySelector('.contact');
+console.log(contactInfo);
+
+const contactHeader = contactInfo.querySelector('h4');
+contactHeader.textContent = siteContent.contact["contact-h4"];
+const contactPOne = contactInfo.querySelector('p');
+contactPOne.textContent = siteContent.contact.address;
+const contactPTwo = contactPOne.nextElementSibling;
+contactPTwo.textContent = siteContent.contact.phone;
+const contactPThree = contactPTwo.nextElementSibling;
+contactPThree.textContent = siteContent.contact.email;
+
+// footer edit
+const footerEdit = document.querySelector('footer');
+const footerParagraph = footerEdit.querySelector('p');
+footerParagraph.textContent = siteContent.footer.copyright;
